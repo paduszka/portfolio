@@ -42,6 +42,7 @@
 	max-width: 1220px;
 }
 
+
 .onepcssgrid-1000 {
 	max-width: 1020px;
 }
@@ -122,7 +123,7 @@
 }
 * {
   text-decoration: none;
-  padding: 0;
+  padding: 0 0;
   margin: 0;
   font-family: "Avenir"; }
 
@@ -142,16 +143,15 @@ h1 {
   .navbar a {
     margin-left: 10px;
     color: #636F84; }
-
-.primaryLink {
-  color: white;
-  border: none;
-  width: 300px;
-  height: 200px;
-  margin-bottom: 50px;
-  border-radius: 30px;
-  padding: 10px 20px;
-  background-image: linear-gradient(-133deg, #99a3e8, #8fcae4); }
+  .navbar .primaryLink {
+    color: white;
+    border: none;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-image: linear-gradient(-133deg, #99a3e8, #8fcae4); }
 
 .cover-text {
   display: flex;
@@ -161,7 +161,7 @@ h1 {
   width: 100%; }
 
 .about {
-  min-height: calc(75vh - 114px); }
+  min-height: 500px; }
 
 .about-image {
   width: 250px;
@@ -180,9 +180,9 @@ h1 {
   height: 50px;
   margin-bottom: 20px; }
 
-.work {
+#work {
   background-color: rgba(185, 219, 222, 0.2); }
-  .work h2 {
+  #work h2 {
     margin: 40px 0; }
 
 button {
@@ -201,17 +201,18 @@ button {
   box-shadow: 0 0 6px 0 rgba(30, 45, 62, 0.09);
   transition: box-shadow 0.2s;
   height: 100%;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  float: left; }
   .card .card-tags {
     margin: 15px 15px 0 25px; }
     .card .card-tags .card-tag {
-      font-size: 10px;
       float: left;
+      font-size: 10px;
       margin-right: 10px;
-      color: #e9ecf6; }
+      color: #b3b6bf; }
   .card h4 {
     float: left;
-    margin: 5px 25px 25px;
+    margin: 30px 25px 25px;
     color: #333d4e;
     font-family: 'Libre Baskerville', serif; }
 
@@ -222,6 +223,13 @@ button {
   height: 230px;
   opacity: 0.8;
   border-radius: 3px 3px 0 0; }
+
+.footer-content {
+  color: white; }
+  .footer-content h1 {
+    color: white; }
+  .footer-content a {
+    color: white; }
 
 .footer-wrapper {
   width: 100%;

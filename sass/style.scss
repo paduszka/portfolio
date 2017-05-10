@@ -2,7 +2,7 @@
 
 * {
   text-decoration: none;
-  padding: 0;
+  padding: 0 0;
   margin: 0;
   font-family: "Avenir";
 }
@@ -21,22 +21,23 @@ h1 {
 .navbar {
   margin-top: 30px;
   justify-content: space-between;
-color: white;
+  color: white;
+
   a {
     margin-left: 10px;
-    color:  #636F84;
+    color: #636F84;
   }
-}
 
-.primaryLink {
-  color: white;
-  border: none;
-  width: 300px;
-  height: 200px;
-  margin-bottom: 50px;
-  border-radius: 30px;
-  padding: 10px 20px;
-  background-image: linear-gradient(-133deg, #99a3e8, #8fcae4);
+  .primaryLink {
+    color: white;
+    border: none;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-image: linear-gradient(-133deg, #99a3e8, #8fcae4);
+  }
 }
 
 .cover-text {
@@ -48,7 +49,7 @@ color: white;
 }
 
 .about {
-  min-height: calc(75vh - 114px);
+  min-height: 500px;
 }
 
 .about-image {
@@ -75,13 +76,12 @@ color: white;
   margin-bottom: 20px;
 }
 
-.work {
-  background-color: rgba(185, 219, 222, 0.2);
-
-  h2 {
-    margin: 40px 0;
+#work {
+    background-color: rgba(185, 219, 222, 0.2);
+    h2 {
+      margin: 40px 0;
+    }
   }
-}
 
 button {
   font-size: 14px;
@@ -93,6 +93,7 @@ button {
   border-radius: 30px;
   background-image: linear-gradient(-133deg, #99a3e8, #8fcae4);
 }
+
 .card {
   border-radius: 3px;
   background-color: #fff;
@@ -100,22 +101,21 @@ button {
   transition: box-shadow 0.2s;
   height: 100%;
   margin-bottom: 30px;
+  float: left;
 
   .card-tags {
     margin: 15px 15px 0 25px;
-
     .card-tag {
-      font-size: 10px;
       float: left;
+      font-size: 10px;
       margin-right: 10px;
-      color: rgb(233, 236, 246)
-      ;
+      color: rgb(179, 182, 191);
     }
   }
 
   h4 {
     float: left;
-    margin: 5px 25px 25px;
+    margin: 30px 25px 25px;
     color: rgb(51, 61, 78);
     font-family: 'Libre Baskerville', serif;
   }
@@ -129,6 +129,18 @@ button {
     height: 230px;
     opacity: 0.8;
     border-radius: 3px 3px 0 0;
+  }
+}
+
+.footer-content {
+  color: white;
+
+  h1 {
+    color: white;
+  }
+
+  a {
+    color: white;
   }
 }
 
@@ -159,7 +171,7 @@ button {
   background-color: #1d262f;
   padding-top: 20px;
   padding-bottom: 20px;
-  color:rgb(233, 236, 246);
+  color: rgb(233, 236, 246);
 }
 
 .footer-icon-img {
