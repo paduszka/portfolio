@@ -121,13 +121,14 @@
 	}
 }
 * {
+  text-decoration: none;
   padding: 0;
   margin: 0;
   font-family: "Avenir"; }
 
 h1 {
   font-family: 'Libre Baskerville', serif;
-  color: #417998; }
+  color: #636F84; }
 
 .navbar-grid {
   display: flex;
@@ -136,9 +137,21 @@ h1 {
 
 .navbar {
   margin-top: 30px;
-  justify-content: space-between; }
+  justify-content: space-between;
+  color: white; }
   .navbar a {
-    margin-left: 10px; }
+    margin-left: 10px;
+    color: #636F84; }
+
+.primaryLink {
+  color: white;
+  border: none;
+  width: 300px;
+  height: 200px;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  background-image: linear-gradient(-133deg, #99a3e8, #8fcae4); }
 
 .cover-text {
   display: flex;
@@ -161,3 +174,81 @@ h1 {
   min-height: calc(75vh - 134px); }
   .skills h3 {
     margin-bottom: 15px; }
+
+#skill-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px; }
+
+.work {
+  background-color: rgba(185, 219, 222, 0.2); }
+  .work h2 {
+    margin: 40px 0; }
+
+button {
+  font-size: 14px;
+  color: white;
+  border: none;
+  width: 200px;
+  height: 45px;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  background-image: linear-gradient(-133deg, #99a3e8, #8fcae4); }
+
+.card {
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0 0 6px 0 rgba(30, 45, 62, 0.09);
+  transition: box-shadow 0.2s;
+  height: 100%;
+  margin-bottom: 30px; }
+  .card .card-tags {
+    margin: 15px 15px 0 25px; }
+    .card .card-tags .card-tag {
+      font-size: 10px;
+      float: left;
+      margin-right: 10px;
+      color: #e9ecf6; }
+  .card h4 {
+    float: left;
+    margin: 5px 25px 25px;
+    color: #333d4e;
+    font-family: 'Libre Baskerville', serif; }
+
+.card-img img {
+  width: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  height: 230px;
+  opacity: 0.8;
+  border-radius: 3px 3px 0 0; }
+
+.footer-wrapper {
+  width: 100%;
+  background-image: linear-gradient(-133deg, #99a3e8, #8fcae4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: calc(100vh - 189px); }
+
+.footer-bottom {
+  background-color: #333d4e;
+  text-align: center; }
+
+.footer-icons {
+  height: 130px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.footer-label {
+  font-size: 14px;
+  background-color: #1d262f;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #e9ecf6; }
+
+.footer-icon-img {
+  width: 30px;
+  margin: 0 20px; }
