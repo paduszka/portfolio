@@ -1,0 +1,87 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'node-sass',
+1 verbose cli   '—save-dev' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.3
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData node-sass
+8 silly fetchPackageMetaData —save-dev
+9 silly fetchNamedPackageData node-sass
+10 silly mapToRegistry name node-sass
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry data Result {
+13 silly mapToRegistry   raw: 'node-sass',
+13 silly mapToRegistry   scope: null,
+13 silly mapToRegistry   escapedName: 'node-sass',
+13 silly mapToRegistry   name: 'node-sass',
+13 silly mapToRegistry   rawSpec: '',
+13 silly mapToRegistry   spec: 'latest',
+13 silly mapToRegistry   type: 'tag' }
+14 silly mapToRegistry uri https://registry.npmjs.org/node-sass
+15 silly fetchOtherPackageData —save-dev
+16 silly cache add args [ '—save-dev', null ]
+17 verbose cache add spec —save-dev
+18 silly cache add parsed spec Result {
+18 silly cache add   raw: '—save-dev',
+18 silly cache add   scope: null,
+18 silly cache add   escapedName: null,
+18 silly cache add   name: null,
+18 silly cache add   rawSpec: '—save-dev',
+18 silly cache add   spec: '/Users/Anna/REPOZYTORIA/myprojects/paduszka:portfolio/—save-dev',
+18 silly cache add   type: 'local' }
+19 error addLocal Could not install /Users/Anna/REPOZYTORIA/myprojects/paduszka:portfolio/—save-dev
+20 silly fetchPackageMetaData Error: ENOENT: no such file or directory, open '/Users/Anna/REPOZYTORIA/myprojects/paduszka:portfolio/—save-dev'
+20 silly fetchPackageMetaData     at Error (native)
+20 silly fetchPackageMetaData  error for —save-dev { Error: ENOENT: no such file or directory, open '/Users/Anna/REPOZYTORIA/myprojects/paduszka:portfolio/—save-dev'
+20 silly fetchPackageMetaData     at Error (native)
+20 silly fetchPackageMetaData   errno: -2,
+20 silly fetchPackageMetaData   code: 'ENOENT',
+20 silly fetchPackageMetaData   syscall: 'open',
+20 silly fetchPackageMetaData   path: '/Users/Anna/REPOZYTORIA/myprojects/paduszka:portfolio/—save-dev' }
+21 verbose request uri https://registry.npmjs.org/node-sass
+22 verbose request no auth needed
+23 info attempt registry request try #1 at 09:26:33
+24 verbose request id c72da95cdc8d630b
+25 verbose etag W/"58fdc3db-3ca69"
+26 verbose lastModified Mon, 24 Apr 2017 09:22:35 GMT
+27 http request GET https://registry.npmjs.org/node-sass
+28 info retry will retry, error on last attempt: TypeError: The header content contains invalid characters
+29 info attempt registry request try #2 at 09:26:43
+30 verbose etag W/"58fdc3db-3ca69"
+31 verbose lastModified Mon, 24 Apr 2017 09:22:35 GMT
+32 http request GET https://registry.npmjs.org/node-sass
+33 info retry will retry, error on last attempt: TypeError: The header content contains invalid characters
+34 info attempt registry request try #3 at 09:27:43
+35 verbose etag W/"58fdc3db-3ca69"
+36 verbose lastModified Mon, 24 Apr 2017 09:22:35 GMT
+37 http request GET https://registry.npmjs.org/node-sass
+38 silly get cb [ 304, undefined ]
+39 verbose etag https://registry.npmjs.org/node-sass from cache
+40 verbose get saving node-sass to /Users/Anna/.npm/registry.npmjs.org/node-sass/.cache.json
+41 verbose correctMkdir /Users/Anna/.npm correctMkdir not in flight; initializing
+42 silly rollbackFailedOptional Starting
+43 silly rollbackFailedOptional Finishing
+44 silly runTopLevelLifecycles Finishing
+45 silly install printInstalled
+46 verbose stack Error: ENOENT: no such file or directory, open '/Users/Anna/REPOZYTORIA/myprojects/paduszka:portfolio/—save-dev'
+46 verbose stack     at Error (native)
+47 verbose cwd /Users/Anna/REPOZYTORIA/myprojects/paduszka:portfolio
+48 error Darwin 15.6.0
+49 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "node-sass" "—save-dev"
+50 error node v6.10.3
+51 error npm  v3.10.10
+52 error path /Users/Anna/REPOZYTORIA/myprojects/paduszka:portfolio/—save-dev
+53 error code ENOENT
+54 error errno -2
+55 error syscall open
+56 error enoent ENOENT: no such file or directory, open '/Users/Anna/REPOZYTORIA/myprojects/paduszka:portfolio/—save-dev'
+57 error enoent ENOENT: no such file or directory, open '/Users/Anna/REPOZYTORIA/myprojects/paduszka:portfolio/—save-dev'
+57 error enoent This is most likely not a problem with npm itself
+57 error enoent and is related to npm not being able to find a file.
+58 verbose exit [ -2, true ]
