@@ -12,7 +12,6 @@ body {
   }
 
 h1 {
-  font-family: 'Lustria', serif;
   color: #636F84;
 }
 
@@ -56,12 +55,14 @@ header {
   align-items: center;
   justify-content: flex-start;
   min-height: 400px;
+  font-family: 'Source Serif Pro', serif;
 }
 
 .about {
   height: 300px;
   padding-bottom: 100px;
   h1 {
+    font-family: 'Source Serif Pro';
     margin-left: 0px;
     margin-top: 50px;
   }
@@ -115,7 +116,7 @@ button {
   height: 45px;
   border-radius: 30px;
   background-image: linear-gradient(-133deg, #99a3e8, #8fcae4);
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .card {
@@ -139,9 +140,9 @@ button {
 
   h4 {
     float: left;
-    margin: 30px 25px 25px;
+    margin: 10px 25px 25px;
     color: rgb(51, 61, 78);
-    font-family: 'Lustria', serif;
+    font-family: 'Source Serif Pro', serif;
   }
 }
 
