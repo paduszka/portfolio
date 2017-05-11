@@ -4,12 +4,20 @@
   text-decoration: none;
   padding: 0 0;
   margin: 0;
-  font-y: "Avenir";
+  font-family: "Avenir";
 }
+
+body {
+      position: relative;
+  }
 
 h1 {
   font-family: 'Lustria', serif;
   color: #636F84;
+}
+
+header {
+  height: 100px;
 }
 
 .navbar-grid {
@@ -22,7 +30,6 @@ h1 {
   margin-top: 30px;
   justify-content: space-between;
   color: white;
-
   a {
     margin-left: 10px;
     color: #636F84;
@@ -40,33 +47,45 @@ h1 {
   }
 }
 
+.cover {
+  height: 400px;
+}
+
 .cover-text {
   display: flex;
   align-items: center;
-  justify-content: center;
-  min-height: calc(100vh - 134px);
-  width: 100%;
+  justify-content: flex-start;
+  min-height: 400px;
 }
 
 .about {
-  min-height: 500px;
+  height: 300px;
+  padding-bottom: 100px;
+  h1 {
+    margin-left: 0px;
+    margin-top: 50px;
+  }
 }
 
 .about-image {
-  width: 250px;
-  height: 250px;
-  margin-bottom: 20px;
-
+  width: 220px;
+  height: 220px;
+  margin-bottom: 50px;
   img {
     border-radius: 50%;
+    margin-right: 40px;
   }
 }
 
 .skills {
-  min-height: calc(75vh - 134px);
-
+  margin-top: 100px;
+  padding-bottom: 50px;
+  height: 400px;
   h3 {
     margin-bottom: 15px;
+  }
+  p {
+    padding-bottom: 20px;
   }
 }
 
@@ -76,22 +95,27 @@ h1 {
   margin-bottom: 20px;
 }
 
-#work {
+  #work {
+    min-height: 900px;
     background-color: rgba(185, 219, 222, 0.2);
+  }
+
+  #work-title {
     h2 {
-      margin: 40px 0;
+      margin-top: 20px;
+      margin-bottom: 20px;
     }
   }
 
 button {
   font-size: 14px;
-  color: white;
+  color: white !important;
   border: none;
   width: 200px;
   height: 45px;
-  margin-bottom: 50px;
   border-radius: 30px;
   background-image: linear-gradient(-133deg, #99a3e8, #8fcae4);
+  margin-bottom: 20px;
 }
 
 .card {
@@ -132,6 +156,11 @@ button {
   }
 }
 
+#contact {
+  width: 100%;
+  background-image: linear-gradient(-133deg,#99a3e8,#8fcae4);
+}
+
 .footer-content {
   color: white;
 
@@ -146,12 +175,11 @@ button {
 
 .footer-wrapper {
   width: 100%;
-  background-image: linear-gradient(-133deg,#99a3e8,#8fcae4);
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-height: calc(100vh - 189px);
+  min-height: 300px;
 }
 
 .footer-bottom {
