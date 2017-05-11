@@ -125,10 +125,10 @@
   text-decoration: none;
   padding: 0 0;
   margin: 0;
-  font-family: "Avenir"; }
+  font-y: "Avenir"; }
 
 h1 {
-  font-family: 'Libre Baskerville', serif;
+  font-family: 'Lustria', serif;
   color: #636F84; }
 
 .navbar-grid {
@@ -214,7 +214,7 @@ button {
     float: left;
     margin: 30px 25px 25px;
     color: #333d4e;
-    font-family: 'Libre Baskerville', serif; }
+    font-family: 'Lustria', serif; }
 
 .card-img img {
   width: 100%;
