@@ -187,7 +187,7 @@ header {
 .skills {
   margin-top: 100px;
   padding-bottom: 50px;
-  height: 400px; }
+  height: 500px; }
   .skills h3 {
     margin-bottom: 15px; }
   .skills p {
@@ -199,12 +199,15 @@ header {
   margin-bottom: 20px; }
 
 #work {
-  min-height: 900px;
+  min-height: 1000px;
   background-color: rgba(185, 219, 222, 0.2); }
 
 #work-title h2 {
   margin-top: 20px;
   margin-bottom: 20px; }
+
+#work .continer {
+  margin-bottom: 40px; }
 
 button {
   font-size: 14px;
@@ -214,7 +217,7 @@ button {
   height: 45px;
   border-radius: 30px;
   background-image: linear-gradient(-133deg, #99a3e8, #8fcae4);
-  margin-bottom: 30px; }
+  margin-bottom: 50px; }
 
 .card {
   border-radius: 3px;
