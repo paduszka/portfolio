@@ -1,213 +1,128 @@
-/* *********************************************************************************************************************
-	One% CSS Grid - 12 Columns Fluid CSS Grid System
-
-	Why One% ? Let’s count ...
-		we have 12 columns (magic number divided by 2, 3, 4, 6)
-
-		for 12 columns we need 11 margins
-
-		so if we count margin 3%, then 3% * 11 margins = 33%
-
-		and if we count width of 1 column 5.5%, than 5.5% * 12 columns = 66%
-
-		in the end we have 33% + 66% = 99% aaand ???
-
-		1% is still here so that's the name - One%
-
-	2 starting options ? Let’s count a bit more ...
-		1200px - perfectly fits 1280 screens
-			12 columns
-			margin 3% / 36px (full-width)
-			col1 5.5% / 66px (full-width)
-
-		1000px - perfectly fits 1024 screens
-			12 columns
-			margin 3% / 30px (full-width)
-			col1 5.5% / 55px (full-width)
-*/
-
-
-
-
-
-/* *********************************************************************************************************************
- * Main container for all
- */
-.onepcssgrid-1000, .onepcssgrid-1200 {
-	margin: 0 auto;
-	padding: 0 0 0 1%; /* THAT'S THE NAME ;) */
-}
-
-.onepcssgrid-1200 {
-	max-width: 1220px;
-}
-
-
-.onepcssgrid-1000 {
-	max-width: 1020px;
-}
-
-.onerow {
-	clear: both;
-	padding: 0 10px;
-}
-
-
-
-
-
-/* *********************************************************************************************************************
- * Common columns definitions
- */
-.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
-	float: left;
-	margin: 0 3% 0 0;
-	min-height: 1px;
-}
-
-.col1.last, .col2.last, .col3.last, .col4.last, .col5.last, .col6.last, .col7.last, .col8.last, .col9.last, .col10.last, .col11.last, .col12 {
-	margin: 0;
-}
-
-.col1 { width: 5.5%; }
-.col2 { width: 14%; }
-.col3 { width: 22.5%; }
-.col4 { width: 31%; }
-.col5 { width: 39.5%; }
-.col6 { width: 48%; }
-.col7 { width: 56.5%; }
-.col8 { width: 65%; }
-.col9 { width: 73.5%; }
-.col10 { width: 82%; }
-.col11 { width: 90.5%; }
-.col12 { width: 99%; margin: 0; }
-
-.col1 img, .col2 img, .col3 img, .col4 img, .col5 img, .col6 img, .col7 img, .col8 img, .col9 img, .col10 img, .col11 img, .col12 img {
-	width: 100%;
-	height: auto;
-	display: block;
-}
-
-
-
-
-
-/* *********************************************************************************************************************
- * Disable padding left/right 10px if I'm 1024 or gibber - correct percentage math
- */
-@media all and (min-width: 1024px) {
-	.onepcssgrid-1000 {
-		max-width: 1000px;
-	}
-
-	.onepcssgrid-1000 .onerow {
-		padding: 0;
-	}
-}
-
-
-
-
-
-/* *********************************************************************************************************************
- * Small devices
- */
-@media all and (max-width: 768px) {
-	.onerow {
-	}
-
-	.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11 {
-		float: none;
-		width: 99%;
-	}
-}
 * {
   text-decoration: none;
   padding: 0 0;
   margin: 0;
-  font-family: "Avenir"; }
+  font-family: "Avenir";
+}
 
 body {
-  position: relative; }
+  position: relative;
+}
 
 h1 {
-  color: #636F84; }
+  color: #636F84;
+}
 
+/* HEADER */
 header {
-  height: 100px; }
+  height: 100px;
+}
 
 .navbar-grid {
   display: flex;
   justify-content: flex-end;
-  padding: 16px; }
+  padding: 16px;
+}
 
 .navbar {
   margin-top: 30px;
   justify-content: space-between;
-  color: white; }
-  .navbar a {
-    margin-left: 10px;
-    color: #636F84; }
-  .navbar .primaryLink {
-    color: white;
-    border: none;
-    width: 300px;
-    height: 200px;
-    margin-bottom: 50px;
-    border-radius: 30px;
-    padding: 10px 20px;
-    background-image: linear-gradient(-133deg, #99a3e8, #8fcae4); }
+  color: white;
+}
 
-.cover {
-  height: 400px; }
+.navbar a {
+  margin-left: 10px;
+  color: #636F84;
+}
+
+.navbar .primaryLink {
+  color: white;
+  border: none;
+  width: 300px;
+  height: 200px;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  padding: 10px 20px;
+  background-image: linear-gradient(133deg, #99a3e8, #8fcae4);
+}
+
+/* COVER */
+#cover {
+  min-height: 100vh;
+	width: 100%;
+}
 
 .cover-text {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  min-height: 400px;
-  font-family: 'Source Serif Pro', serif; }
+	margin: 0 auto;
+  font-family: 'Source Serif Pro', serif;
+	font-size: 50px;
+	margin: 220px 0;
+}
 
-.about {
-  height: 300px;
-  padding-bottom: 100px; }
-  .about h1 {
-    font-family: 'Source Serif Pro';
-    margin-left: 0px;
-    margin-top: 50px; }
+/* ABOUT */
+
+#about {
+	min-height: 100vh;
+	margin-bottom: 50px;
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
+}
 
 .about-image {
-  width: 220px;
-  height: 220px;
-  margin-bottom: 50px; }
-  .about-image img {
-    border-radius: 50%;
-    margin-right: 40px; }
+  width: 100%;
+  height: 100%;
+	margin: 0 auto;
+	justify-content: center;
+	padding-left: 2%;
+	padding-right: 2%;
+}
 
-.skills {
-  margin-top: 100px;
-  padding-bottom: 50px;
-  height: 500px; }
-  .skills h3 {
-    margin-bottom: 15px; }
-  .skills p {
-    padding-bottom: 20px; }
+.about-image img {
+  border-radius: 50%;
+}
+
+.about-text {
+  margin-top: 30%;
+}
+
+/* SKILLS */
+
+#skills {
+  min-height: 150px;
+	width: 100%;
+	padding-top: 50px;
+}
+
+.skills h3 {
+  margin-bottom: 15px;
+}
+
+.skills p {
+  padding-bottom: 20px;
+}
+
+.skill {
+	margin-bottom: 50px;
+}
 
 #skill-icon {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 20px; }
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+}
+
+/* WORK */
 
 #work {
-  min-height: 1000px;
-  background-color: rgba(185, 219, 222, 0.2); }
+  margin-top: 0px;
+  background-color: rgba(185, 219, 222, 0.2);
+}
 
 #work-title h2 {
   margin-top: 20px;
-  margin-bottom: 20px; }
-
-#work .continer {
-  margin-bottom: 40px; }
+  margin-bottom: 20px;
+}
 
 button {
   font-size: 14px;
@@ -217,28 +132,42 @@ button {
   height: 45px;
   border-radius: 30px;
   background-image: linear-gradient(-133deg, #99a3e8, #8fcae4);
-  margin-bottom: 50px; }
+  margin-bottom: 70px;
+}
 
 .card {
+	width: 100%;
   border-radius: 3px;
   background-color: #fff;
   box-shadow: 0 0 6px 0 rgba(30, 45, 62, 0.09);
   transition: box-shadow 0.2s;
-  height: 100%;
+  height: 300px;
   margin-bottom: 30px;
-  float: left; }
-  .card .card-tags {
-    margin: 15px 15px 0 25px; }
-    .card .card-tags .card-tag {
-      float: left;
-      font-size: 10px;
-      margin-right: 10px;
-      color: #b3b6bf; }
-  .card h4 {
-    float: left;
-    margin: 10px 25px 25px;
-    color: #333d4e;
-    font-family: 'Source Serif Pro', serif; }
+  float: left;
+}
+
+.card-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.card .card-tags {
+  margin: 15px 15px 0 25px;
+}
+
+.card .card-tags .card-tag {
+  float: left;
+  font-size: 10px;
+  margin-right: 10px;
+  color: #b3b6bf;
+}
+
+.card h4 {
+  float: left;
+  margin: 5px 25px 25px;
+  color: #333d4e;
+  font-family: 'Source Serif Pro', serif;
+}
 
 .card-img img {
   width: 100%;
@@ -246,18 +175,25 @@ button {
   background-repeat: no-repeat;
   height: 230px;
   opacity: 0.8;
-  border-radius: 3px 3px 0 0; }
+  border-radius: 3px 3px 0 0;
+}
 
 #contact {
   width: 100%;
-  background-image: linear-gradient(-133deg, #99a3e8, #8fcae4); }
+  background-image: linear-gradient(133deg, #99a3e8, #8fcae4);
+}
 
 .footer-content {
-  color: white; }
-  .footer-content h1 {
-    color: white; }
-  .footer-content a {
-    color: white; }
+  color: white;
+}
+
+.footer-content h1 {
+  color: white;
+}
+
+.footer-content a {
+  color: white;
+}
 
 .footer-wrapper {
   width: 100%;
@@ -265,25 +201,30 @@ button {
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-height: 300px; }
+  min-height: 300px;
+}
 
 .footer-bottom {
   background-color: #333d4e;
-  text-align: center; }
+  text-align: center;
+}
 
 .footer-icons {
   height: 130px;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+}
 
 .footer-label {
   font-size: 14px;
   background-color: #1d262f;
   padding-top: 20px;
   padding-bottom: 20px;
-  color: #e9ecf6; }
+  color: #e9ecf6;
+}
 
 .footer-icon-img {
   width: 30px;
-  margin: 0 20px; }
+  margin: 0 20px;
+}
